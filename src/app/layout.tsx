@@ -1,11 +1,19 @@
 import { Metadata } from 'next';
+import { Inter as FontSans } from 'next/font/google';
 import * as React from 'react';
 
 import '@/styles/globals.css';
 // !STARTERCONF This is for demo purposes, remove @/styles/colors.css import immediately
 import '@/styles/colors.css';
 
+import { cn } from '@/lib/utils';
+
 import { siteConfig } from '@/constant/config';
+
+const fontSans = FontSans({
+  subsets: ['latin'],
+  variable: '--font-sans',
+});
 
 // !STARTERCONF Change these default meta
 // !STARTERCONF Look at @/constant/config to change them
@@ -56,7 +64,14 @@ export default function RootLayout({
 }) {
   return (
     <html>
-      <body>{children}</body>
+      <body
+        className={cn(
+          'min-h-screen bg-background font-sans antialiased',
+          fontSans.variable
+        )}
+      >
+        {children}
+      </body>
     </html>
   );
 }
