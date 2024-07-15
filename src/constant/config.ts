@@ -1,7 +1,6 @@
 export const siteConfig = {
-  title: 'Next.js + Tailwind CSS + TypeScript Starter',
+  title: 'Drive 2 Learn',
   description:
-    'A starter for Next.js, Tailwind CSS, and TypeScript with Absolute Import, Seo, Link component, pre-configured with Husky',
-  /** Without additional '/' on the end, e.g. https://theodorusclarence.com */
-  url: 'https://tsnext-tw.thcl.dev',
+    'Learn to drive with Drive 2 Learn. We offer driving lessons in and around the South and West Yorkshire area. We have a range of driving courses to suit all levels of experience. Book your driving lessons today!',
+  url: 'https://drive2learn.co.uk',
 };
