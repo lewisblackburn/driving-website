@@ -1,13 +1,8 @@
 import { MenuIcon } from 'lucide-react';
+import Link from 'next/link';
 
-import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from '@/components/ui/sheet';
+import { Button } from '@/components/ui/button';
+import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 
 export const MobileNav = () => {
   return (
@@ -18,14 +13,19 @@ export const MobileNav = () => {
       {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
       {/* @ts-ignore */}
       <SheetContent>
-        <SheetHeader>
-          <SheetTitle>Are you absolutely sure?</SheetTitle>
-
-          <SheetDescription>
-            This action cannot be undone. This will permanently delete your
-            account and remove your data from our servers.
-          </SheetDescription>
-        </SheetHeader>
+        <div className='flex flex-col space-y-2 items-start'>
+          <Link href='/'>
+            <Button variant='ghost'>Home</Button>
+          </Link>
+          <Link href='/about'>
+            <Button variant='ghost'>About</Button>
+          </Link>
+          <Link href='/instructors'>
+            <Button variant='ghost'>Instructors</Button>
+          </Link>
+          <Button variant='ghost'>DVSA</Button>
+          <Button variant='ghost'>Reviews</Button>
+        </div>
       </SheetContent>
     </Sheet>
   );

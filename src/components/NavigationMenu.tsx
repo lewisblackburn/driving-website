@@ -27,7 +27,7 @@ export function NavigationMenuDemo() {
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href='/' legacyBehavior passHref>
+          <Link href='/about' legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               About
             </NavigationMenuLink>
@@ -39,6 +39,9 @@ export function NavigationMenuDemo() {
             <ul className='grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[1fr]'>
               <ListItem href='/' title='Alex'>
                 Alex is an approved driving instructor with years of experience.
+              </ListItem>
+              <ListItem href='/instructors' title='View all'>
+                View all instructors
               </ListItem>
             </ul>
           </NavigationMenuContent>
