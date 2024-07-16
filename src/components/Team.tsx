@@ -6,14 +6,14 @@ export const Team = () => {
         <div>
           <div className='relative pb-56 mb-4 rounded shadow lg:pb-64'>
             <img
-              className='absolute object-cover w-full h-full rounded'
-              src='https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260'
+              className='absolute object-cover object-top w-full h-full rounded'
+              src='/images/alex.jpg'
               alt='Person'
             />
           </div>
           <div className='flex flex-col sm:text-center'>
-            <p className='text-lg font-bold'>Oliver Aguilerra</p>
-            <p className='mb-5 text-xs text-gray-800'>Product Manager</p>
+            <p className='text-lg font-bold'>Alex </p>
+            <p className='mb-5 text-xs text-gray-800'>CEO | Instructor</p>
             <div className='flex items-center space-x-3 sm:justify-center'>
               <a
                 href='/'

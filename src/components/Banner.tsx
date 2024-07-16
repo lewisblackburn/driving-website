@@ -26,7 +26,7 @@ export default function Banner() {
           <span className='font-bold uppercase text-xs tracking-widest'>
             We have come closer to you:{' '}
           </span>
-          <span className='text-xs'>Wakefield</span>
+          <span className='text-xs'>Yorkshire</span>
         </div>
       </div>
       <div className='hidden lg:flex items-center space-x-2'>
