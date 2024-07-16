@@ -7,11 +7,9 @@ import { cn } from '@/lib/utils';
 
 import {
   NavigationMenu,
-  NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu';
 
@@ -34,29 +32,16 @@ export function NavigationMenuDemo() {
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Instructors</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className='grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[1fr]'>
-              <ListItem href='/' title='Alex'>
-                Alex is an approved driving instructor with years of experience.
-              </ListItem>
-              <ListItem href='/instructors' title='View all'>
-                View all instructors
-              </ListItem>
-            </ul>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <Link href='/' legacyBehavior passHref>
+          <Link href='/instructors' legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              DVSA
+              Instructors
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <Link href='/' legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              Reviews
+              DVSA
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>

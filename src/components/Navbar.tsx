@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import * as React from 'react';
 
 import { MobileNav } from '@/components/MobileNav';
@@ -15,12 +16,14 @@ export default function Navbar() {
         <NavigationMenuDemo />
         <MobileNav />
         <Separator orientation='vertical' />
-        <Button
-          className='hidden xl:flex uppercase font-bold text-xs tracking-widest text-white'
-          size='lg'
-        >
-          Consultation
-        </Button>
+        <Link href='/#contact'>
+          <Button
+            className='hidden xl:flex uppercase font-bold text-xs tracking-widest text-white'
+            size='lg'
+          >
+            Consultation
+          </Button>
+        </Link>
       </div>
     </div>
   );
