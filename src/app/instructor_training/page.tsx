@@ -1,6 +1,18 @@
 'use client';
 
-import { CarIcon, LockIcon, PaperclipIcon } from 'lucide-react';
+import {
+  BookHeart,
+  Calendar,
+  CarFront,
+  CarIcon,
+  ClockIcon,
+  Hourglass,
+  Library,
+  PoundSterling,
+  ShieldPlus,
+  TestTube2Icon,
+  Users,
+} from 'lucide-react';
 import * as React from 'react';
 import '@/lib/env';
 
@@ -36,25 +48,25 @@ const featuresOne = [
     name: 'Personalized 1-on-1 Coaching',
     description:
       'Our program offers personalized 1-on-1 coaching to ensure each trainee gets tailored guidance. This approach helps address individual strengths and weaknesses, providing customized study plans and immediate feedback for maximized potential.',
-    icon: CarIcon,
+    icon: BookHeart,
   },
   {
     name: '24/7 Support from Trainers and Peer Trainees',
     description:
       'We provide 24/7 support from experienced trainers and fellow trainees, ensuring assistance is available whenever needed. This constant availability allows you to progress at your own pace and get help anytime.',
-    icon: LockIcon,
+    icon: ClockIcon,
   },
   {
     name: 'Organized Study Groups',
     description:
       'Our organized study groups promote collaborative learning. These groups help trainees share knowledge, discuss complex topics, and prepare for assessments together, fostering a sense of community and mutual support.',
-    icon: PaperclipIcon,
+    icon: Users,
   },
   {
     name: 'Comprehensive Guide to Study Materials',
     description:
       'We offer a comprehensive guide to study materials, including textbooks, online resources, and practice exercises. This all-in-one resource allows you to study efficiently without the need to search for additional information.',
-    icon: PaperclipIcon,
+    icon: Library,
   },
 ];
 
@@ -116,13 +128,13 @@ const featuresTwo = [
     name: 'Corresponding Training',
     description:
       'Tailored training programs aligned with your personal development goals to enhance your skills effectively.',
-    icon: LockIcon,
+    icon: ShieldPlus,
   },
   {
     name: 'Expert Test Preparation',
     description:
       'Professional guidance and strategies to ensure you are fully prepared for your upcoming test.',
-    icon: PaperclipIcon,
+    icon: TestTube2Icon,
   },
 ];
 
@@ -177,37 +189,37 @@ const featuresThree = [
     name: 'Expert Car Coaching to Develop Your Skills',
     description:
       'Receive expert car coaching designed to enhance your driving skills and knowledge. Our experienced trainers will help you become a proficient and confident driver.',
-    icon: CarIcon,
+    icon: CarFront,
   },
   {
     name: 'Professional Guidance from Genuine Driving Instructors',
     description:
       'Benefit from professional guidance provided by genuine driving instructors. Their expertise ensures you receive top-quality instruction and support throughout your training.',
-    icon: CarIcon,
+    icon: ShieldPlus,
   },
   {
     name: 'Students That Fit Your Schedule',
     description:
       'Teach students whose schedules align with yours. This flexibility allows you to manage your time effectively and maintain a balanced lifestyle.',
-    icon: CarIcon,
+    icon: Calendar,
   },
   {
     name: 'Work Your Own Hours Without Micromanagement',
     description:
       'Enjoy the freedom to work your own hours without being micromanaged. This autonomy enables you to set your own pace and create a work schedule that suits your needs.',
-    icon: CarIcon,
+    icon: Hourglass,
   },
   {
     name: 'Earn While You Train on a Trainee License',
     description:
       'Earn an income while you train with a trainee license. This opportunity allows you to gain practical experience and financial stability simultaneously.',
-    icon: CarIcon,
+    icon: PoundSterling,
   },
   {
     name: '24/7 Support When Needed',
     description:
       'Access 24/7 support whenever you need it. Our team is always available to provide assistance and answer any questions, ensuring you feel supported throughout your training.',
-    icon: CarIcon,
+    icon: ClockIcon,
   },
 ];
 
