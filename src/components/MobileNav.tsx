@@ -24,6 +24,9 @@ export const MobileNav = () => {
             <Button variant='ghost'>Instructors</Button>
           </Link>
           <Button variant='ghost'>DVSA</Button>
+          <Link href='/gallery'>
+            <Button variant='ghost'>Gallery</Button>
+          </Link>
         </div>
       </SheetContent>
     </Sheet>
