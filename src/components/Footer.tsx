@@ -22,10 +22,18 @@ const Footer = () => {
           </div>
 
           <LinkGroup header='Resources'>
-            <NavLink link='/#' label='SaaS Development' />
-            <NavLink link='/#' label='Our Products' />
-            <NavLink link='/#' label='User Flow' />
-            <NavLink link='/#' label='User Strategy' />
+            <NavLink
+              link='https://www.safedrivingforlife.info/free-practice-tests/practice-theory-test-for-car-drivers-1-of-2/'
+              label='Theory Test'
+            />
+            <NavLink
+              link='https://www.safedrivingforlife.info/free-practice-tests/hazard-perception-test/'
+              label='Hazard Perception Test'
+            />
+            <NavLink
+              link='https://www.safedrivingforlife.info/shop/car/'
+              label='eLearning Kit'
+            />
           </LinkGroup>
           <LinkGroup header='Company'>
             <NavLink link='/#' label='About Drive2Learn' />
@@ -34,10 +42,10 @@ const Footer = () => {
             <NavLink link='/#' label='Setting & Privacy' />
           </LinkGroup>
           <LinkGroup header='Quick Links'>
-            <NavLink link='/#' label='Premium Support' />
-            <NavLink link='/#' label='Our Services' />
-            <NavLink link='/#' label='Know Our Team' />
-            <NavLink link='/#' label='Download App' />
+            <NavLink link='/about' label='About' />
+            <NavLink link='/instructors' label='Instructors' />
+            <NavLink link='/dvsa' label='DVSA' />
+            <NavLink link='/gallery' label='Gallery' />
           </LinkGroup>
 
           <div className='w-full px-4 sm:w-1/2 lg:w-3/12'>
@@ -100,7 +108,7 @@ const Footer = () => {
                 </a>
               </div>
               <p className='text-base text-body-color '>
-                &copy; 2025 Drive2Learn
+                &copy; 2024 Drive2Learn
               </p>
             </div>
           </div>

@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import { Button } from '@/components/ui/button';
 
 export const Hero = () => {
@@ -33,12 +35,14 @@ export const Hero = () => {
             driving ability is safe and to prepare them for the Test.
           </p>
           <div className='flex items-center'>
-            <Button
-              className='uppercase font-bold text-xs tracking-widest text-white bg-black hover:bg-black/70'
-              size='lg'
-            >
-              Read More
-            </Button>
+            <Link href='/about'>
+              <Button
+                className='uppercase font-bold text-xs tracking-widest text-white bg-black hover:bg-black/70'
+                size='lg'
+              >
+                Read More
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
