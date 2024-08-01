@@ -7,7 +7,7 @@ import Banner from '@/components/Banner';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
 import { Hero } from '@/components/Hero';
-import LogoCloud from '@/components/LogoCloud';
+import LogoCloud, { LogoCloud2 } from '@/components/LogoCloud';
 import Navbar from '@/components/Navbar';
 import { Pricing } from '@/components/Pricing';
 import { Services } from '@/components/Services';
@@ -28,6 +28,7 @@ export default function HomePage() {
         <Contact />
       </section>
       <LogoCloud />
+      <LogoCloud2 />
       <Footer />
       <Toaster />
     </main>
