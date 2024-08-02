@@ -23,9 +23,8 @@ export default function Banner() {
         <div className='flex items-center space-x-2'>
           <MapPin className='text-primary' />
           <span className='font-bold uppercase text-xs tracking-widest'>
-            We have come closer to you:{' '}
+            About Us
           </span>
-          <span className='text-xs'>Yorkshire</span>
         </div>
       </div>
       <div className='hidden lg:flex items-center space-x-2'>

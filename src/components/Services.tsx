@@ -2,6 +2,7 @@ import Autoplay from 'embla-carousel-autoplay';
 import Image from 'next/image';
 import Link from 'next/link';
 
+import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import {
   Carousel,
@@ -13,34 +14,49 @@ import {
 
 const ServiceData = [
   {
-    image: '/images/instructor.jpg',
-    title: 'Instructor Training',
-    description: 'Become a driving instructor with our training program',
-    link: '/instructor_training',
-  },
-  {
     image: '/images/one.jpg',
-    title: 'Beginner Lessons',
-    description: 'Start your driving journey with our beginner lessons',
+    title: 'Experienced / Refresher',
+    hours: '10 hour course',
+    price: '£440',
+    description:
+      'A course that suits people who can drive, have an understanding of road safety and are nearly test ready.',
     link: '',
   },
   {
     image: '/images/two.jpg',
-    title: 'Intensive Course',
-    description: 'Get your driving license in the shortest time possible',
+    title: 'Advanced',
+    hours: '15 Hour Course',
+    description:
+      'Ideal for those who have had lessons in the past and just need to improve some skills to be test ready.',
     link: '',
+    price: '£645',
   },
   {
     image: '/images/three.jpg',
-    title: 'Refresher Course',
-    description: 'Refresh your driving skills with our refresher course',
+    title: 'Intermediate',
+    hours: '20 Hour Course',
+    description:
+      'This course is for people who have had lessons in the past and are ready to commit their time for lessons to be test ready.',
     link: '',
+    price: '£840',
   },
   {
     image: '/images/four.jpg',
-    title: 'Retake Test Course',
-    description: 'Prepare for your driving test with our retake test course',
+    title: 'Beginner',
+    hours: '25 Hour Course',
+    description:
+      'The beginner course is for people who are fairly new to driving and wish to start over with the basics.',
     link: '',
+    price: '£1025',
+  },
+  {
+    image: '/images/four.jpg',
+    title: 'Introduction',
+    hours: '30 Hour Course',
+    description:
+      'This course is for people who have never had a lesson before and are brand new learners.',
+    link: '',
+    price: '£1200',
   },
 ];
 
@@ -65,8 +81,8 @@ export const Services = () => {
         <CarouselContent>
           {ServiceData.map((service, index) => (
             <CarouselItem key={index} className='md:basis-1/2 lg:basis-1/3'>
-              <Link href={service.link}>
-                <Card className='rounded-b-lg h-[320px]'>
+              <Link href='/book'>
+                <Card className='rounded-b-lg h-[450px] flex flex-col'>
                   <Image
                     src={service.image}
                     className='rounded-t-lg object-cover object-center'
@@ -76,11 +92,17 @@ export const Services = () => {
                     style={{ width: '100%', height: '200px' }}
                     alt='seatbelt'
                   />
-                  <div className='p-5'>
+                  <div className='p-5 flex-grow'>
                     <h1 className='font-bold text-lg'>{service.title}</h1>
+                    <h2 className='font-semibold text-md my-2'>
+                      {service.hours} - {service.price}
+                    </h2>
                     <p className='text-secondary-foreground/60 font-medium'>
                       {service.description}
                     </p>
+                  </div>
+                  <div className='p-5 mt-auto'>
+                    <Button className='w-full'>Find Out More</Button>
                   </div>
                 </Card>
               </Link>

@@ -61,7 +61,7 @@ export default function Reviews() {
                       reviews.average > rating
                         ? 'text-yellow-400'
                         : 'text-gray-300',
-                      'flex-shrink-0 h-5 w-5 fill-current'
+                      'flex-shrink-0 h-5 w-5 fill-current',
                     )}
                     aria-hidden='true'
                   />
@@ -92,7 +92,7 @@ export default function Reviews() {
                       <StarIcon
                         className={cn(
                           count.count > 0 ? 'text-yellow-400' : 'text-gray-300',
-                          'flex-shrink-0 h-5 w-5 fill-current'
+                          'flex-shrink-0 h-5 w-5 fill-current',
                         )}
                         aria-hidden='true'
                       />
@@ -163,7 +163,7 @@ export default function Reviews() {
                               review.rating > rating
                                 ? 'text-yellow-400'
                                 : 'text-gray-300',
-                              'h-5 w-5 flex-shrink-0 fill-current'
+                              'h-5 w-5 flex-shrink-0 fill-current',
                             )}
                             aria-hidden='true'
                           />
