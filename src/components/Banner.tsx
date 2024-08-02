@@ -15,9 +15,8 @@ export default function Banner() {
         <div className='flex items-center space-x-2'>
           <Clock className='text-primary' />
           <span className='font-bold uppercase text-xs tracking-widest'>
-            Training time:{' '}
+            Get In Touch
           </span>
-          <span className='text-xs'>9:00 AM - 5:00 PM</span>
         </div>
       </div>
       <div>
