@@ -11,7 +11,6 @@ import LogoCloud, { LogoCloud2 } from '@/components/LogoCloud';
 import Navbar from '@/components/Navbar';
 import { Pricing } from '@/components/Pricing';
 import { Services } from '@/components/Services';
-import { Toaster } from '@/components/ui/toaster';
 
 export default function HomePage() {
   return (
@@ -30,7 +29,6 @@ export default function HomePage() {
       <LogoCloud />
       <LogoCloud2 />
       <Footer />
-      <Toaster />
     </main>
   );
 }

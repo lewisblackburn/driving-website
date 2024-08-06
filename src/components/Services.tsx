@@ -12,7 +12,7 @@ import {
   CarouselPrevious,
 } from '@/components/ui/carousel';
 
-const ServiceData = [
+export const ServiceData = [
   {
     image: '/images/one.jpg',
     title: 'Experienced / Refresher',
@@ -81,7 +81,7 @@ export const Services = () => {
         <CarouselContent>
           {ServiceData.map((service, index) => (
             <CarouselItem key={index} className='md:basis-1/2 lg:basis-1/3'>
-              <Link href='/book'>
+              <Link href={`/book?course=${service.title}`}>
                 <Card className='rounded-b-lg h-[450px] flex flex-col'>
                   <Image
                     src={service.image}
