@@ -1,3 +1,5 @@
+'use client';
+
 import dynamic from 'next/dynamic';
 import * as React from 'react';
 import { Suspense } from 'react';
@@ -7,12 +9,40 @@ import Banner from '@/components/Banner';
 import Footer from '@/components/Footer';
 import Navbar from '@/components/Navbar';
 import PageHeader from '@/components/PageHeader';
+import { toast } from '@/components/ui/use-toast';
 
 const SelectFormClient = dynamic(() => import('@/components/CourseSelection'), {
   suspense: true,
 });
 
+// const stripePromise = loadStripe(
+//   process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY ?? '',
+// );
+
 export default function BookPage() {
+  React.useEffect(() => {
+    // Check to see if this is a redirect back from Checkout
+    const query = new URLSearchParams(window.location.search);
+    if (query.get('success')) {
+      setTimeout(() => {
+        toast({
+          title: 'Deposit made!',
+          description: 'You will receive an email confirmation.',
+        });
+      }, 1000);
+    }
+
+    if (query.get('canceled')) {
+      setTimeout(() => {
+        toast({
+          title: 'Deposit canceled! ',
+          description:
+            'Continue to shop around and checkout when you’re ready.',
+        });
+      }, 1000);
+    }
+  }, []);
+
   return (
     <main className='flex flex-col h-screen justify-between'>
       <header>
