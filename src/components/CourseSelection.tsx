@@ -45,6 +45,15 @@ export default function CourseSelection() {
   return (
     <Form {...form}>
       <form action='/api/checkout' method='POST' className='w-2/3 space-y-6'>
+        <input
+          className='hidden'
+          name='priceId'
+          value={
+            ServiceData.find(
+              (service) => service.title === form.getValues('course'),
+            )?.priceId ?? ''
+          }
+        />
         <FormField
           control={form.control}
           name='course'

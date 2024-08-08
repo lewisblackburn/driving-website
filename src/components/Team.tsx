@@ -1,7 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 
-import { RiFacebookBoxFill, RiInstagramFill } from 'react-icons/ri';
-
 const members = [
   {
     name: 'Alex',
@@ -16,10 +14,15 @@ const members = [
   {
     name: 'Katie',
     role: 'Instructor',
-    image: '/images/katie.jpg',
+    image: '/images/katie.png',
   },
   {
     name: 'Chris',
+    role: 'Instructor',
+    image: '/images/chris.jpg',
+  },
+  {
+    name: 'Corinne',
     role: 'Instructor',
     image: '/images/chris.jpg',
   },
@@ -28,7 +31,7 @@ const members = [
 export const Team = () => {
   return (
     <div className='px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-32'>
-      <div className='grid gap-10 mx-auto sm:grid-cols-2 lg:grid-cols-4 lg:max-w-screen-xl'>
+      <div className='grid gap-10 mx-auto sm:grid-cols-2 lg:grid-cols-5 lg:max-w-screen-xl'>
         {members.map((member) => (
           <div key={member.name}>
             <div className='relative pb-56 mb-4 rounded shadow lg:pb-64'>
@@ -41,10 +44,6 @@ export const Team = () => {
             <div className='flex flex-col sm:text-center'>
               <p className='text-lg font-bold'>{member.name}</p>
               <p className='mb-5 text-xs text-gray-800'>{member.role}</p>
-              <div className='flex items-center space-x-3 sm:justify-center'>
-                <RiFacebookBoxFill className='text-xl' />
-                <RiInstagramFill className='text-xl' />
-              </div>
             </div>
           </div>
         ))}

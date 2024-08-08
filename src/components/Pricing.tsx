@@ -14,7 +14,7 @@ export const Pricing = () => {
               <h2 className='mb-3 text-3xl font-bold leading-[1.208] text-dark sm:text-4xl md:text-[40px]'>
                 Our Pricing Plan
               </h2>
-              <p className='text-base text-body-color '>
+              <p className='text-base text-body-color'>
                 There are many variations of passages of Lorem Ipsum available
                 but the majority have suffered alteration in some form.
               </p>
