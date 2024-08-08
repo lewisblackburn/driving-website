@@ -22,7 +22,7 @@ export const ServiceData = [
     description:
       'A course that suits people who can drive, have an understanding of road safety and are nearly test ready.',
     link: '',
-    priceId: 'price_1PlVkUIDIC6jLb4jOF5YycvH',
+    priceId: 'price_1PlVhpIDIC6jLb4jybbWVULA',
   },
   {
     image: '/images/two.jpg',
@@ -33,7 +33,7 @@ export const ServiceData = [
     link: '',
     price: '£645',
     deposit: '£120',
-    priceId: 'price_1PlVjkIDIC6jLb4jKvdmkf40',
+    priceId: 'price_1PlViuIDIC6jLb4jKfyMu8JA',
   },
   {
     image: '/images/three.jpg',
@@ -44,7 +44,7 @@ export const ServiceData = [
     link: '',
     price: '£840',
     deposit: '£140',
-    priceId: 'price_1PlViuIDIC6jLb4jKfyMu8JA',
+    priceId: 'price_1PlVjkIDIC6jLb4jKvdmkf40',
   },
   {
     image: '/images/four.jpg',
@@ -55,7 +55,7 @@ export const ServiceData = [
     link: '',
     price: '£1025',
     deposit: '£150',
-    priceId: 'price_1PlVhpIDIC6jLb4jybbWVULA',
+    priceId: 'price_1PlVkUIDIC6jLb4jOF5YycvH',
   },
 ];
 

@@ -25,11 +25,11 @@ export const Pricing = () => {
         <div className='-mx-4 flex flex-wrap justify-center'>
           <div className='-mx-4 flex flex-wrap'>
             <PricingCard
-              type='Student'
-              price='£35'
-              description='Pass your test with our expert instructors.'
+              type='Driving Courses'
+              price='From £440'
+              description='Pass your practical driving test with our expert instructors.'
               buttonText='Read More'
-              buttonLink='/student_training'
+              buttonLink='/book?course=Experienced / Refresher'
               active={false}
             >
               <List>Free Pickup</List>
@@ -38,30 +38,30 @@ export const Pricing = () => {
               <List>Manual Car</List>
             </PricingCard>
             <PricingCard
-              type='Intensive'
-              price='£45'
-              description='Get your driving license in the shortest time possible.'
-              buttonText='Read More'
-              buttonLink='/intensive_course'
-              active
-            >
-              <List>Free Pickup</List>
-              <List>Practical Lessons</List>
-              <List>Theory Tips</List>
-              <List>Manual Car</List>
-              <List>Back-To-Back Lessons</List>
-            </PricingCard>
-            <PricingCard
-              type='Instructor'
-              price='£50'
-              description='Become a driving instructor with our training program.'
+              type='Instructor Courses'
+              price='From £50/ph'
+              description='Become a successful driving instructor with us and join our community.'
               buttonText='Read More'
               buttonLink='/instructor_training'
+              active
+            >
+              <List>Training for Part 1/2/3</List>
+              <List>Help with standards checks</List>
+              <List>One-on-one training sessions</List>
+              <List>Earn whilst you train</List>
+            </PricingCard>
+            <PricingCard
+              type='Help & Support'
+              price='Free'
+              description='Feel free to get in touch if you have any inquiries.'
+              buttonText='Read More'
+              buttonLink='/#contact'
               active={false}
             >
-              <List>Instructor Techniques</List>
-              <List>Practical Lessons</List>
-              <List>Manual Car</List>
+              <List>Expert Advice</List>
+              <List>Guidence</List>
+              <List>No obligations</List>
+              <List>Grounded People</List>
             </PricingCard>
           </div>
         </div>
@@ -97,7 +97,7 @@ const PricingCard = ({
             {type}
           </span>
           <h2 className='mb-5 text-[42px] font-bold text-dark '>
-            From {price}
+            {price}
             {/* <span className='text-base font-medium text-body-color '>
               / {subscription}
             </span> */}

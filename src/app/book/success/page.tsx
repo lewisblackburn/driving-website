@@ -3,23 +3,24 @@
 import Link from 'next/link';
 import * as React from 'react';
 import { RiCheckFill } from 'react-icons/ri';
-import '@/lib/env';
 
 import { Button } from '@/components/ui/button';
 import { toast } from '@/components/ui/use-toast';
 
 export default function SuccessPage() {
+  const emailSentRef = React.useRef(false); // Ref to track email sent status
+
   React.useEffect(() => {
     const query = new URLSearchParams(window.location.search);
-    if (query.get('success')) {
-      setTimeout(() => {
-        toast({
-          title: 'Deposit Successful!',
-          description:
-            'Thank you for your purchanse. You will receive an email confirmation.',
-        });
-      }, 0);
-    } else {
+    if (query.get('success') && !emailSentRef.current) {
+      emailSentRef.current = true; // Set the ref to prevent multiple sends
+
+      toast({
+        title: 'Deposit Successful!',
+        description:
+          'Thank you for your purchase. You will receive an email confirmation.',
+      });
+    } else if (!query.get('success')) {
       window.location.href = '/';
     }
   }, []);

@@ -24,16 +24,21 @@ export const Hero = () => {
       <div className='relative flex flex-col items-start w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:max-w-screen-2xl'>
         <div className='mb-16 lg:my-40 lg:max-w-lg lg:pr-5'>
           <h2 className='max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none'>
-            Fast Track
+            Welcome to
             <br className='hidden md:block' />{' '}
             <span className='inline-block text-deep-purple-accent-400'>
-              Driving Lessons
+              Drive 2 Learn
             </span>
           </h2>
           <p className='pr-5 mb-5 text-base text-gray-700 md:text-lg'>
             At Drive 2 Learn, we work as hard as our students to make sure their
-            driving ability is safe and to prepare them for the Test.
+            driving ability is safe and to prepare them for the Test.{' '}
           </p>
+          <p className='pr-5 mb-5 text-base text-gray-700 md:text-lg'>
+            We now offer instructor training and offer the opportunity to join
+            our successful and happy community.
+          </p>
+
           <div className='flex items-center'>
             <Link href='/about'>
               <Button

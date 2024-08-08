@@ -4,12 +4,12 @@ const members = [
   {
     name: 'Alex',
     role: 'CEO | Instructor',
-    image: '/images/alex.jpg',
+    image: '/images/alex.png',
   },
   {
     name: 'Stephen',
     role: 'Instructor',
-    image: '/images/stephen.jpg',
+    image: '/images/stephen.png',
   },
   {
     name: 'Katie',
@@ -19,12 +19,12 @@ const members = [
   {
     name: 'Chris',
     role: 'Instructor',
-    image: '/images/chris.jpg',
+    image: '/images/chris.png',
   },
   {
     name: 'Corinne',
     role: 'Instructor',
-    image: '/images/chris.jpg',
+    image: '/images/corinne.png',
   },
 ];
 
@@ -34,7 +34,7 @@ export const Team = () => {
       <div className='grid gap-10 mx-auto sm:grid-cols-2 lg:grid-cols-5 lg:max-w-screen-xl'>
         {members.map((member) => (
           <div key={member.name}>
-            <div className='relative pb-56 mb-4 rounded shadow lg:pb-64'>
+            <div className='relative pb-56 mb-4 rounded lg:pb-64'>
               <img
                 className='absolute object-cover object-top w-full h-full rounded'
                 src={member.image}

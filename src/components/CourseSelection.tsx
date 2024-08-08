@@ -81,6 +81,14 @@ export default function CourseSelection() {
             </FormItem>
           )}
         />
+        {/* THIS DOESN'T WORK */}
+        <p>
+          {
+            ServiceData.find(
+              (service) => service.title === form.getValues('course'),
+            )?.description
+          }
+        </p>
         <Button type='submit'>Make a Deposit</Button>
       </form>
     </Form>

@@ -32,6 +32,11 @@ export default function BookPage() {
         />
         <div className='relative max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8'>
           <div className='container mx-auto px-4 py-8'>
+            <div className='mb-24 -mt-24'>
+              <Suspense fallback={<div>Loading...</div>}>
+                <SelectFormClient />
+              </Suspense>
+            </div>
             <h1 className='text-3xl font-bold mb-4'>About Us</h1>
             <p className='mb-4'>
               Drive 2 Learn is the trading name of Drive 2 Learn Ltd and shall
@@ -359,11 +364,6 @@ export default function BookPage() {
               <li>Protect your safe client account</li>
               <li>Carry out customer profiling</li>
             </ul>
-            <div className='mt-10'>
-              <Suspense fallback={<div>Loading...</div>}>
-                <SelectFormClient />
-              </Suspense>
-            </div>
           </div>
         </div>
       </section>

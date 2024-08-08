@@ -9,7 +9,7 @@ export default function PageHeader({
   image?: string;
 }) {
   return (
-    <div className='relative bg-red-900'>
+    <div className='relative bg-red-700'>
       <div className='absolute inset-0'>
         {/*  eslint-disable-next-line @next/next/no-img-element */}
         <img
@@ -18,7 +18,7 @@ export default function PageHeader({
           alt=''
         />
         <div
-          className='absolute inset-0 bg-red-900 mix-blend-multiply'
+          className='absolute inset-0 bg-red-700 mix-blend-multiply'
           aria-hidden='true'
         />
       </div>

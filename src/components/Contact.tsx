@@ -25,13 +25,10 @@ const Contact = () => {
                   GET IN TOUCH WITH US
                 </h2>
                 <p className='mb-9 text-base leading-relaxed text-body-color dark:text-dark-6'>
-                  At Drive 2 Learn, we are dedicated to ensuring our students
-                  develop safe driving skills and are fully prepared for their
-                  driving test. We customize each lesson to meet the individual
-                  needs and schedules of our students, offering training
-                  exclusively in manual vehicles and specializing in preparation
-                  for the Barnsley Test Centre. Feel free to get in touch using
-                  the form below.
+                  Please feel free to get in touch if you have any questions
+                  regarding the services we offer. We are down to earth human
+                  beings who genuinely care and are happy to help anyone who
+                  needs us.
                 </p>
                 <div className='mb-8 flex w-full max-w-[370px]'>
                   <div className='mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]'>
