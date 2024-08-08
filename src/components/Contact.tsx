@@ -134,12 +134,13 @@ const Contact = () => {
                     // @ts-ignore
                     const phone = e.target[2].value;
                     // @ts-ignore
-                    const details = e.target[3].value;
+                    const message = e.target[3].value;
                     const result = await sendContactForm({
+                      subject: "Drive2Learn's Contact Form",
                       name,
                       email,
                       phone,
-                      details,
+                      message,
                     });
 
                     toast({
@@ -166,7 +167,7 @@ const Contact = () => {
                   <ContactTextArea
                     row='6'
                     placeholder='Your Message'
-                    name='details'
+                    name='message'
                     defaultValue=''
                   />
                   <div>

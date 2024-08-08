@@ -1,7 +1,13 @@
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-export const sendContactForm = async (data: any) => {
+export const sendContactForm = async (data: {
+  subject: string;
+  name: string;
+  email: string;
+  phone: string;
+  message: string;
+}) => {
   try {
-    const response = await fetch('/api/contact', {
+    const response = await fetch('/api/send', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

@@ -42,6 +42,8 @@ export default function CourseSelection() {
     },
   });
 
+  const selectedCourse = form.watch('course');
+
   return (
     <Form {...form}>
       <form action='/api/checkout' method='POST' className='w-2/3 space-y-6'>
@@ -81,12 +83,10 @@ export default function CourseSelection() {
             </FormItem>
           )}
         />
-        {/* THIS DOESN'T WORK */}
         <p>
           {
-            ServiceData.find(
-              (service) => service.title === form.getValues('course'),
-            )?.description
+            ServiceData.find((service) => service.title === selectedCourse)
+              ?.description
           }
         </p>
         <Button type='submit'>Make a Deposit</Button>
