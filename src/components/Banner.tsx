@@ -3,11 +3,12 @@ import Link from 'next/link';
 import * as React from 'react';
 import {
   RiFacebookFill,
+  RiGoogleFill,
   RiInstagramFill,
-  RiPhoneFill,
-  RiTwitterFill,
-  RiYoutubeFill,
+  RiLinkedinBoxFill,
 } from 'react-icons/ri';
+
+import { siteConfig } from '@/constant/config';
 
 export default function Banner() {
   return (
@@ -34,11 +35,19 @@ export default function Banner() {
           Social Media:
         </span>
         <div className='flex items-center space-x-3'>
-          <RiFacebookFill />
-          <RiInstagramFill />
-          <RiTwitterFill />
-          <RiYoutubeFill />
-          <RiPhoneFill />
+          <a href={siteConfig.facebook} target='_blank' rel='noreferrer'>
+            <RiFacebookFill />
+          </a>
+          <a href={siteConfig.instagram} target='_blank' rel='noreferrer'>
+            <RiInstagramFill />
+          </a>
+
+          <a href={siteConfig.linkedin} target='_blank' rel='noreferrer'>
+            <RiLinkedinBoxFill />
+          </a>
+          <a href={siteConfig.google} target='_blank' rel='noreferrer'>
+            <RiGoogleFill />
+          </a>
         </div>
       </div>
     </div>
