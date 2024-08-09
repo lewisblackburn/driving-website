@@ -86,7 +86,7 @@ export default function InsturctorsPage() {
                     <div>
                       <img
                         className='h-12'
-                        src='/images/logo2.svg'
+                        src='/images/logo3.svg'
                         alt='Workcation'
                       />
                     </div>
