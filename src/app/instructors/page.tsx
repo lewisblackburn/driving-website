@@ -42,7 +42,7 @@ export default function InsturctorsPage() {
                   here to help.
                 </p>
                 <Link
-                  href='/instructor_training'
+                  href='/#contact'
                   className='inline-flex items-center font-semibold transition-colors duration-200 text-primary hover:text-red-800'
                 >
                   Learn more

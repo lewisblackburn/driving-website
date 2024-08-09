@@ -36,12 +36,12 @@ export const Team = () => {
           <div key={member.name}>
             <div className='relative pb-56 mb-4 rounded lg:pb-64'>
               <img
-                className='absolute object-cover object-top w-full h-full rounded'
+                className='absolute object-contain object-center w-full h-full rounded'
                 src={member.image}
                 alt='Person'
               />
             </div>
-            <div className='flex flex-col sm:text-center'>
+            <div className='flex flex-col text-center'>
               <p className='text-lg font-bold'>{member.name}</p>
               <p className='mb-5 text-xs text-gray-800'>{member.role}</p>
             </div>

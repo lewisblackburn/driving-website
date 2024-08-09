@@ -126,8 +126,8 @@ export const Services = () => {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className='top-96 left-10 sm:-left-12 sm:top-1/2' />
-        <CarouselNext className='top-96 right-10 sm:-right-12 sm:top-1/2' />
+        <CarouselPrevious className='top-[550px] left-10 sm:-left-12 sm:top-1/2' />
+        <CarouselNext className='top-[550px] right-10 sm:-right-12 sm:top-1/2' />
       </Carousel>
     </section>
   );
