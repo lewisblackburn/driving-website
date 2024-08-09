@@ -144,6 +144,9 @@ const Contact = () => {
                     toast({
                       title: result.message,
                     });
+
+                    const form = e.target as HTMLFormElement;
+                    form.reset();
                   }}
                   encType='text/plain'
                 >
