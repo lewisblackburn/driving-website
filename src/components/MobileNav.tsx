@@ -23,7 +23,9 @@ export const MobileNav = () => {
           <Link href='/instructors'>
             <Button variant='ghost'>Instructors</Button>
           </Link>
-          <Button variant='ghost'>DVSA</Button>
+          <Link href='dvsa'>
+            <Button variant='ghost'>DVSA</Button>
+          </Link>
           <Link href='/gallery'>
             <Button variant='ghost'>Gallery</Button>
           </Link>
