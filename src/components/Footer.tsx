@@ -44,10 +44,9 @@ const Footer = () => {
             />
           </LinkGroup>
           <LinkGroup header='Company'>
-            <NavLink link='/#' label='About Drive2Learn' />
-            <NavLink link='/#' label='Contact & Support' />
-            <NavLink link='/#' label='Success History' />
-            <NavLink link='/#' label='Setting & Privacy' />
+            <NavLink link='/instructor_training' label='Instructor Training' />
+            <NavLink link='/book' label='Book a Lesson' />
+            <NavLink link='/#contact' label='Contact & Support' />
           </LinkGroup>
           <LinkGroup header='Quick Links'>
             <NavLink link='/about' label='About' />

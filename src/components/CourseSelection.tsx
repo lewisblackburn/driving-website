@@ -46,7 +46,11 @@ export default function CourseSelection() {
 
   return (
     <Form {...form}>
-      <form action='/api/checkout' method='POST' className='w-2/3 space-y-6'>
+      <form
+        action='/api/checkout'
+        method='POST'
+        className='w-full sm:w-2/3 space-y-6'
+      >
         <input
           className='hidden'
           name='priceId'
